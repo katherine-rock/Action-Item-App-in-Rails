@@ -1,0 +1,37 @@
+<%= form_with(model: action_item) do |form| %>
+  <% if action_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(action_item.errors.count, "error") %> prohibited this action_item from being saved:</h2>
+
+      <ul>
+        <% action_item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :action %>
+    <%= form.text_field :action %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.text_field :priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
