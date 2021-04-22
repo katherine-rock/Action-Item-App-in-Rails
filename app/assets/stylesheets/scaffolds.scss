@@ -3,6 +3,8 @@ h1 {
   background-color: #31AFD4;
   padding: 1em;
   font-size: 3em;
+  width: 100%;
+  margin: 0;
 }
 
 body {
@@ -22,7 +24,8 @@ body, p, ol, ul, td {
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px; }
+  font-size: 11px; 
+}
 
 a {
   color: #000; }
@@ -85,4 +88,36 @@ label {
 
 .show, .edit, .add {
   padding: 0 3em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: .8em;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: .5em;
+    text-align: center;
+    margin: 0;
+  }
+
+  table {
+    padding: 0;
+  }
+  
+  td {
+    padding: .2em;
+    margin: 0em;
+  }
+
+  th {
+    text-align: left;
+    padding: .2em;
+    margin: 0em;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
