@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  padding: .8em;
+}
+
 body {
   background-color: #fff;
   color: #050505;
@@ -26,7 +30,12 @@ table {
 body, p, ol, ul, td {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1em;
-  line-height: 1.5em; }
+  line-height: 1.5em; 
+}
+
+p {
+  padding: .8em;
+}
 
 pre {
   background-color: #eee;
@@ -54,6 +63,10 @@ div.field,
 div.actions {
   margin-bottom: 10px; 
   padding: 0 3em;
+}
+
+.show_links, .edit_links {
+  margin-top: 1em;
 }
 
 .link {
@@ -94,7 +107,7 @@ label {
   display: block; 
 }
 
-.show, .edit, .add {
+.show, .edit_links, .add {
   padding: 0 3em;
 }
 
