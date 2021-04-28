@@ -9,6 +9,7 @@
     <%= render 'form', action_item: @action_item %>
 
 <section class="edit_links">
-    <%= link_to 'View', @action_item %> |
-    <%= link_to 'Back', action_items_path %>
+    <%= link_to 'View this Action Item', @action_item %>
 </section>
+
+<%= render partial: "shared/navbar"  %>

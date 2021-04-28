@@ -2,9 +2,9 @@
 
 <h1>Things To Do</h1>
 
-<section class="link">
-  <%= link_to 'Add New Action Item', new_action_item_path %>
-</section>
+<%# <section class="link">
+    <%= link_to 'Add New Action Item', new_action_item_path %>
+<%# </section> %>
 
 <table>
   <thead>
@@ -33,5 +33,7 @@
 </table>
 
 <br>
+
+<%= render partial: "shared/navbar"  %>
 
 

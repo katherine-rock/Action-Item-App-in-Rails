@@ -48,10 +48,13 @@ pre {
 }
 
 a {
-  color: #000; }
+  color: #000;
+  text-decoration: none;
+}
 
 a:visited {
-  color: #902D41; }
+  color: black; 
+}
 
 a:hover {
   color: #fff;
@@ -70,12 +73,18 @@ div.actions {
 }
 
 .show_links, .edit_links {
-  margin-top: 1em;
+  margin: 1em 1em 3em 1em ;
+  padding: 1em;
+  background-color: steelblue;
+  max-width: max-content;
 }
 
 .link {
-  margin: 2em;
+  margin: 2em 2em 2em 4em;
   color: #902D41;
+  background-color: #31AFD4;
+  padding: 1em;
+  max-width: max-content;
 }
 
 #notice {
@@ -111,8 +120,25 @@ label {
   display: block; 
 }
 
-.show, .edit_links, .add {
+.show, .add {
   padding: 0 3em;
+}
+
+nav {
+  padding: 1em;
+  margin: 1em;
+  color: white;
+}
+
+nav span {
+  font-size: 1.2em;
+  margin: 1em;
+  padding: 1em;
+  background-color: #31AFD4;
+}
+
+nav a:visited {
+  color: white; 
 }
 
 @media only screen and (max-width: 600px) {

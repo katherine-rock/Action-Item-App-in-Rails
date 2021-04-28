@@ -25,8 +25,9 @@
   </p>
 
   <section class="show_links">
-    <%= link_to 'Edit', edit_action_item_path(@action_item) %> |
-    <%= link_to 'Home', action_items_path %>
+    <%= link_to 'Edit this Action Item', edit_action_item_path(@action_item) %>
   </section>
     
 </section>
+
+<%= render partial: "shared/navbar"  %>
