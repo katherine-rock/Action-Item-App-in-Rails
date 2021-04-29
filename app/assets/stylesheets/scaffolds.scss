@@ -75,9 +75,13 @@ div.actions {
 
 .show_links, .edit_links {
   margin: 1em 1em 3em 1em ;
-  padding: 1em;
-  background-color: steelblue;
+  padding: .8em 2.5em;
+  background-color: navy;
   max-width: max-content;
+}
+
+.show_links a, .edit_links a {
+  color: fuchsia;
 }
 
 .link {
@@ -148,6 +152,7 @@ nav a:visited {
   margin-left: 1em;
   text-decoration: underline;
 }
+
 
 @media only screen and (max-width: 600px) {
   body {
