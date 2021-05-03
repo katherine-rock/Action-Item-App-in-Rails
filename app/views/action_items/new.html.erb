@@ -1,10 +1,12 @@
-<p class="header_paragraph"></p>
-<h1>Things To Do</h1>
+<div class="container">
+    <p class="header_paragraph"></p>
+    <h1>Things To Do</h1>
 
-<section class="add">
-    <h2>Add New Action Item</h2>
-</section >
+    <section class="add">
+        <h2>Add New Action Item</h2>
+    </section >
 
-    <%= render 'form', action_item: @action_item %>
+        <%= render 'form', action_item: @action_item %>
 
-<%= render partial: "shared/navbar"  %>
+    <%= render partial: "shared/navbar"  %>
+</div>

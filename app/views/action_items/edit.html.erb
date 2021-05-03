@@ -1,15 +1,17 @@
-<p class="header_paragraph"></p>
+<div class="container">
 
-<h1>Things To Do</h1>
+    <h1>Things To Do</h1>
 
-<section class="edit">
-    <h2>Edit Action Item</h2>
-</section>
+    <section class="edit">
+        <h2>Edit Action Item</h2>
+    </section>
 
-    <%= render 'form', action_item: @action_item %>
+        <%= render 'form', action_item: @action_item %>
 
-<section class="edit_links">
-    <%= link_to 'View this Action Item', @action_item %>
-</section>
+    <section class="edit_links">
+        <%= link_to 'View this Action Item', @action_item %>
+    </section>
 
-<%= render partial: "shared/navbar"  %>
+    <%= render partial: "shared/navbar"  %>
+
+</div>
