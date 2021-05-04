@@ -1,14 +1,11 @@
-<nav>
-    <span>
-        <%= link_to 'Home', action_items_path %>
-    </span>
-
-    <span>
-        <%= link_to 'Add New Action Item', new_action_item_path %>
-    </span>
-
-    <span>
-        <%= link_to 'Help', help_path %>
-    </span>
-
-</nav>
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="/action_items">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="action_items/new">Add New Action Item</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/help">Help</a>
+  </li>
+</ul>
