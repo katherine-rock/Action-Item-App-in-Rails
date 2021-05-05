@@ -23,6 +23,10 @@
 }
 
 header a {
+    color: #78CE50;
+}
+
+header a:hover{
     color: #B0E298;
 }
 
@@ -39,6 +43,38 @@ header {
 header img {
     max-width: 40px;
     padding-bottom: 5px;
+}
+
+// This refers to the 'Add action item button'
+.actions {
+    margin-top: .5em;
+}
+
+.actions input {
+    padding: .5em 2.4em .5em 1.5em;
+    background-color: #B0E298;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.edit_links, .show_links {
+    border: 2px solid black;
+    max-width: max-content;
+    margin-top: .5em;
+    padding: .5em 1.5em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav {
+    margin-top: 2em;
+    background-color: #D5DDEC;
+}
+
+.alert, .notice {
+    font-size: 1.5em;
+    color: #B0E298;
+    background-color: #3D3B8E;
 }
 
 
