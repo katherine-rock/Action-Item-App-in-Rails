@@ -22,11 +22,21 @@
     margin: 2em;
 }
 
+header a {
+    color: #B0E298;
+}
+
 header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 3em;
     text-decoration: none;
     text-align: center;
+    background-color: #3D3B8E;
+}
+
+header img {
+    max-width: 40px;
+    padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -45,9 +55,11 @@ header {
         display: none;
     }
 
+    table {
+        display: flexbox;
+        flex-wrap: wrap;
+    }
     td, th {
         padding: 2px;
     }
-
   }
-
