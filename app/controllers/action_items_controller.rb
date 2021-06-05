@@ -1,6 +1,12 @@
 class ActionItemsController < ApplicationController
   before_action :set_action_item, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, only: %i[ index show new create edit update destroy ]
+  rescue_from Pundit::NotAuthorizedError, with: :unauthorised 
+
+  def unauthorised
+    flash[:alert] = "Sorry! You do not have access to do that. If you believe this is an error, please report the issue via the help page."
+    redirect_to action_items_path
+  end
 
   # GET /action_items or /action_items.json
   def index
@@ -13,6 +19,7 @@ class ActionItemsController < ApplicationController
 
   # GET /action_items/1 or /action_items/1.json
   def show
+    authorize @action_item
   end
 
   # GET /action_items/new
@@ -22,6 +29,7 @@ class ActionItemsController < ApplicationController
 
   # GET /action_items/1/edit
   def edit
+    authorize @action_item
   end
 
   # POST /action_items or /action_items.json
@@ -54,6 +62,7 @@ class ActionItemsController < ApplicationController
 
   # DELETE /action_items/1 or /action_items/1.json
   def destroy
+    authorize @action_item
     @action_item.destroy
     respond_to do |format|
       format.html { redirect_to action_items_url, notice: "Action item was successfully destroyed." }
