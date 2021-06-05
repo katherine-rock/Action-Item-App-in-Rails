@@ -6,7 +6,7 @@ class ActionItemsController < ApplicationController
   def index
     # @action_items = ActionItem.all
     if user_signed_in?
-      @index = ActionItem.where(user_id: current_user.id)
+      @action_items = ActionItem.where(user_id: current_user.id)
       else   
       end
   end
