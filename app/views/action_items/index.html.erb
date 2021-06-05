@@ -1,9 +1,9 @@
 <div class="container">
 
-<%# <% if current_user.action_item.empty?%> %>
-
-
-<%# <% else %> %>
+<% if user_signed_in? && !@index.exists? %>
+  <p>Sorry. You do not have any action items in your list of Things To Do.</p>
+  <p>Please click the 'Add New Action Item' link below to get started.</p>
+<% else %>
   <table class="table">
     <thead>
       <tr>
@@ -16,7 +16,7 @@
     </thead>
 
     <tbody>
-      <% @action_items.each do |action_item| %>
+      <% @index.each do |action_item| %>
         <tr>
           <% if action_item.action? %>
             <td><%= link_to action_item.action, action_item %></td>
@@ -50,7 +50,7 @@
     </tbody>
   </table>
 
-  <%# <% end %> %>
+  <% end %>
 
   <br>
 

@@ -4,7 +4,11 @@ class ActionItemsController < ApplicationController
 
   # GET /action_items or /action_items.json
   def index
-    @action_items = ActionItem.all
+    # @action_items = ActionItem.all
+    if user_signed_in?
+      @index = ActionItem.where(user_id: current_user.id)
+      else   
+      end
   end
 
   # GET /action_items/1 or /action_items/1.json
@@ -68,6 +72,6 @@ class ActionItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def action_item_params
-      params.require(:action_item).permit(:action, :category, :priority, :comment)
+      params.require(:action_item).permit(:action, :category, :priority, :comment).merge(user_id: current_user.id)
     end
 end
