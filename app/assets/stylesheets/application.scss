@@ -68,6 +68,9 @@ header img {
     background-color: #D5DDEC;
     font-size: 1.2em;
     display: inline-flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .alert, .notice {
@@ -99,5 +102,8 @@ p {
 
     td, th {
         padding: 2px;
+    }
+    .nav {
+        flex-direction: column;
     }
   }
