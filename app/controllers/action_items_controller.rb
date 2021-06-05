@@ -1,5 +1,6 @@
 class ActionItemsController < ApplicationController
   before_action :set_action_item, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: %i[ index show new create edit update destroy ]
 
   # GET /action_items or /action_items.json
   def index

@@ -1,9 +1,5 @@
 <div class="container">
 
-  <%= render partial: "shared/header"  %>
-
-  <p id="notice"><%= notice %></p>
-  
   <table class="table">
     <thead>
       <tr>
@@ -19,8 +15,6 @@
       <% @action_items.each do |action_item| %>
         <tr>
           <td><%= link_to action_item.action, action_item %></td>
-          <%# Original: %>
-          <%# <td><%= action_item.action</td> %>
           <td><%= action_item.category %></td>
           <td><%= action_item.priority %></td>
           <td class="desktop"><%= action_item.comment %></td>
@@ -34,5 +28,4 @@
 
   <br>
 
-  <%= render partial: "shared/navbar"  %>
 </div>

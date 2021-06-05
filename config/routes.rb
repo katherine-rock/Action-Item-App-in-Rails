@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :action_items
   root to: 'action_items#index'
   get 'help', to: 'action_items#help', as: :help 
