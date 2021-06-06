@@ -1,24 +1,25 @@
-# README
+# README - Things To Do App #
+'Things To Do' is an app you can use the app to track your action items. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The app is available at: 
 
-Things you may want to cover:
+https://things-to-do-kr.herokuapp.com/
 
-* Ruby version
+You will need to create an account and log in to start adding action items. 
 
-* System dependencies
+This app was originally prepared as a terminal app for an assignment. It was then converted to a Rails app and deployed using Heroku. 
 
-* Configuration
+The following __Ruby gems__ have been used for the app:
+* __Devise__ for user authentication
 
-* Database creation
+* __Pundit__ for user authorisation 
 
-* Database initialization
+* __Bootstrap__ for styling
 
-* How to run the test suite
+__Screenshots__
 
-* Services (job queues, cache servers, search engines, etc.)
+![Screenshot of a login page](ScreenShot_login.png "Log In")
 
-* Deployment instructions
+![Screenshot of add action item page](ScreenShot_addaction.png "Add action item")
 
-* ...
+![Screenshot of all action items page](ScreenShot_index.png "View all action items")
